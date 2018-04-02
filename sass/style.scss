@@ -226,11 +226,11 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
 	-o-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
 	transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
-	-webkit-transform: scale(0.0);
-	-moz-transform: scale(0.0);
-	-ms-transform: scale(0.0);
-	-o-transform: scale(0.0);
-	transform: scale(0.0);
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
 	overflow-y: scroll;
 	@media screen and(max-width: $screen-sm){
 		width: 300px;
@@ -278,11 +278,11 @@ h1, h2, h3, h4, h5, h6 {
 	.menu-show & {
 		visibility: visible;
 		opacity: 1;
-		-webkit-transform: scale(1.0);
-		-moz-transform: scale(1.0);
-		-ms-transform: scale(1.0);
-		-o-transform: scale(1.0);
-		transform: scale(1.0);
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
 	} 
 	ul {
 		// text-align: center;
