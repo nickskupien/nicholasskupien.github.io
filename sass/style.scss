@@ -110,6 +110,7 @@ body {
 	font-weight: 400;
 	background: lighten($brand-black,98%);
 	color: lighten($brand-black,50%);
+    overflow-x: hidden;
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
@@ -1471,7 +1472,7 @@ input[type="text"] {
 
 // footer
 #footer{
-	padding: 8em 0;
+	//padding: 8em 0;
 	display: block;
 	width: 100%;
 	// background: $brand-white;
