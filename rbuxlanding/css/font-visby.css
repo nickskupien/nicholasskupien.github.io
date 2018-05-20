@@ -1,0 +1,55 @@
+body {
+  /*font-size: 1em;
+  line-height: 1.85714286em;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;*/
+  font-family: 'VisbyCF-Regular', 'Helvetica', 'Arial', sans-serif;
+  color: #666666;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'VisbyCF-Regular', 'Helvetica', 'Arial', sans-serif;
+  /*VisbyCF-ExtraBold*/
+  /*color: #252525;*/
+  font-weight: 300;
+  font-variant-ligatures: common-ligatures;
+}
+.text-bold {
+  font-family: 'VisbyCF-ExtraBold', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  font-variant-ligatures: common-ligatures;
+}
+.close {
+  font-family:  'Helvetica', 'Arial', sans-serif;
+}
+
+/*
+.btn {
+  font-family: 'VisbyCF-Medium', 'Helvetica', 'Arial', sans-serif;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  font-size: inherit;
+  border-radius: 6px;
+  padding-top: 0.46428571em;
+  padding-bottom: 0.46428571em;
+  padding-right: 2.78571429em;
+  padding-left: 2.78571429em;
+  border: 1px solid #252525;
+  border-width: 1px;
+  line-height: 1.85714286em;
+  letter-spacing: 1px;
+}
+*/

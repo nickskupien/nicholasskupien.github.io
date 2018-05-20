@@ -85,23 +85,6 @@
 						</ul>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="head-title">Works</h2>
-						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</nav>
@@ -141,6 +124,8 @@
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
 							<a href="work.html" class="work-img" style="background-image: url(images/wsb2.png);">
+                                <p class="photo-overlay">The wheel sensor board PCB is 2 layer, with 2 grounds.  It uses a STM32 microprocessor.  ~10 opmamp RC circuits are implimented to filter noise from the input signals before they are read.  A differential amplifier creates a readable signal from a strain gage.
+                                </p>
 							</a>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
@@ -149,10 +134,12 @@
 									<p>I began by looking into strain gages, an arrangement of gage grids (a foil pattern running in one axis) that varies resistance with strain. These can be mounted on an object that is under stress to measure the strain. During my research, I came across different sources of error in the gages.  One of particular interest is heat.  As the external tempurature changes, the resistance of the material in the gage also changes.  To overcome this, an arrangement of two gage grids positioned perpendicularly to each other, called a tee rosette, was used. By positioning the arrangement with one gage grid running in the principal stress direction, the other grid should not be effected by strain on the material. Now the grid under stress could be calibrated with the unaffected grid.</p>
 									<img class="img-responsive" src="images/wsb3.png" alt=""><br>
                                     <p>To interface with the strain gages, a quarter-wheatstone-bridge configuration is used that can compensate for the tempurature change, and then an instumentation amplifier increases the gain of the signal.</p>
-									<p>A schematic was created with a STM32 microcontroller and its required components.  After including the strain gage interface circuit (among other circuits to interface with tempurature sensors, pressure sensors, potentiometers and an encoder), The PCB was ready to be created.</p>
-                                    <p>The board requires a seperate ground for all the analog sensors to improve accuracy.</p>
-                                    
-									<p class="read"><a href="#">Live Preview</a></p>
+									<p>A schematic was then created to include the strain gage interface circuit (among other circuits that interface with tempurature sensors, pressure sensors, potentiometers and an encoder). To read these signals was A STM32 microcontroller that also interprets them and sends a digital conversion over a CAN bus (A node based network) to the rest of the car.</p>
+                                    <p>The PCB was created by seperating the board into blocks of components that share common signals. After routing traces for the blocks, I tried to have each block have the least amount of needed signals from outside of the block.  Ideally only power and ground was needed to each block.  Then the blocks were layed out on a defined board shape (to match the enclosure) and traces were layed to connect signals from the blocks to the microcontroller.</p>
+                                    <p>To provide ground to all the components could be as easy as putting a ground layer and connecting everything to that one source. This creates an issue however with the analog components. For instance, an analog component is very sucseptable to noise.  Putting analog and digitial loads on one source can induce noise on the analog compnents from the digital loads (the nature of digital components is that they switch from high to low, creating ripples in the ground source).  To reduce this, the ground plane was split into two.  One plane connects to analog components, and the other to digital.  You can see this on the image below. 
+                                    </p>
+                                    <p>Insert Image</p>
+                                    <p>The analog ground runs from the voltage regulator, down to each of the analog components, to the connector and then connects to digital ground.  The connection point is made small to reduce noise transfer.  </p>
 								</div>
 							</div>
 						</div>
@@ -161,72 +148,29 @@
 			</div>
 		</div>
 
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-pb-sm">
-							<div class="row">
-								<div class="col-md-10">
-									<h2>Let's Talk</h2>
-									<p>A small river named Duden flows by their place and supplies.</p>
-									<p><a href="#">Nicholas@info.com</a></p>
-									<p class="social-icons">
-										<a href="#"><i class="icon-facebook4"></i></a>
-										<a href="#"><i class="icon-twitter3"></i></a>
-										<a href="#"><i class="icon-googleplus"></i></a>
-										<a href="#"><i class="icon-dribbble2"></i></a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-pb-sm">
-							<h2>Latest Blog</h2>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
-								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Art Gallery in Japan</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
-								<div class="desc">
-									<span>February 9, 2018</span>
-									<h3><a href="#">A Japanese Constellation</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
-								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Road Trip</a></h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-pb-sm">
-							<h2>Newsletter</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
-							<div class="subscribe text-center">
-								<div class="form-group">
-									<input type="text" class="form-control text-center" placeholder="Enter Email address">
-									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<p>
-								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+        <footer>
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-pb-sm">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h2>Let's Talk</h2>
+                                    <p></p>
+                                    <p><a href="#">nicholasskupien@gmail.com</a></p>
+                                    <p class="social-icons">
+                                        <a href="#"><i class="icon-facebook4"></i></a>
+                                        <a href="#"><i class="icon-twitter3"></i></a>
+                                        <a href="#"><i class="icon-googleplus"></i></a>
+                                        <a href="#"><i class="icon-dribbble2"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 	
 	</div>
 
