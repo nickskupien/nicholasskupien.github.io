@@ -26,23 +26,6 @@
 
 	};
 
-	var burgerMenu = function() {
-
-		$('.js-nav-toggle').on('click', function(event) {
-			event.preventDefault();
-			var $this = $(this);
-			if( $('body').hasClass('menu-show') ) {
-				$('body').removeClass('menu-show');
-				$('#main-nav > .js-nav-toggle').removeClass('show');
-			} else {
-				$('body').addClass('menu-show');
-				setTimeout(function(){
-					$('#main-nav > .js-nav-toggle').addClass('show');
-				}, 900);
-			}
-		})
-	};
-
 	// Animations
 
 	var contentWayPoint = function() {
@@ -166,7 +149,6 @@
 	// Document on load.
 	$(window).load(function() {
 		fullHeight();
-		burgerMenu();
 		counterWayPoint();
 		contentWayPoint();
 		owlCarouselFeatureSlide();
