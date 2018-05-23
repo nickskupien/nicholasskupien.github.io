@@ -128,25 +128,23 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img full-size" style="background-image: url(images/wsb-3d.png);">
-<!--
-                                <p class="photo-overlay">The wheel sensor board PCB is 2 layer, with 2 grounds.  It uses a STM32 microprocessor.  ~10 opmamp RC circuits are implimented to filter noise from the input signals before they are read.  A differential amplifier creates a readable signal from a strain gage.
-                                </p>
--->
-							</a>
+							<img class="full-size work-img" src="images/wsb-3d.png"/>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
 <!--									<h2>Pursuing Best</h2>-->
 									<p>When I first joined the Waterloo Formula Electric car team, I was tasked with designing a board that could interface with a set of 4 reccuring sensors near each tire of the car. Additionally, The suspension team was looking to get quantitative data on their new suspension design. </p>
-									<p>I began by looking into strain gages, an arrangement of gage grids (a foil pattern running in one axis) that varies resistance with strain. These can be mounted on an object that is under stress to measure the strain. During my research, I came across different sources of error in the gages.  One of particular interest is heat.  As the external tempurature changes, the resistance of the material in the gage also changes.  To overcome this, an arrangement of two gage grids positioned perpendicularly to each other, called a tee rosette, was used. By positioning the arrangement with one gage grid running in the principal stress direction, the other grid should not be effected by strain on the material. Now the grid under stress could be calibrated with the unaffected grid.</p>
-									<img class="img-responsive" src="images/wsb3.png" alt=""><br>
-                                    <p>To interface with the strain gages, a quarter-wheatstone-bridge configuration is used that can compensate for the tempurature change, and then an instumentation amplifier increases the gain of the signal.</p>
-									<p>A schematic was then created to include the strain gage interface circuit (among other circuits that interface with tempurature sensors, pressure sensors, potentiometers and an encoder). To read these signals was A STM32 microcontroller that also interprets them and sends a digital conversion over a CAN bus (A node based network) to the rest of the car.</p>
-                                    <p>The PCB was created by seperating the board into blocks of components that share common signals. After routing traces for the blocks, I tried to have each block have the least amount of needed signals from outside of the block.  Ideally only power and ground was needed to each block.  Then the blocks were layed out on a defined board shape (to match the enclosure) and traces were layed to connect signals from the blocks to the microcontroller.</p>
-                                    <p>To provide ground to all the components could be as easy as putting a ground layer and connecting everything to that one source. This creates an issue however with the analog components. For instance, an analog component is very sucseptable to noise.  Putting analog and digitial loads on one source can induce noise on the analog compnents from the digital loads (the nature of digital components is that they switch from high to low, creating ripples in the ground source).  To reduce this, the ground plane was split into two.  One plane connects to analog components, and the other to digital.  You can see this on the image below. 
-                                    </p>
-                                    <p>Insert Image</p>
-                                    <p>The analog ground runs from the voltage regulator, down to each of the analog components, to the connector and then connects to digital ground.  The connection point is made small to reduce noise transfer.  </p>
+                                    <p>The wheel sensor boards measure numerous analog signals like suspension force, tempuratures, coolant pressure and suspension position. An outline of the progress to design the PCB is written below.  Additionally, I have linked the schematic file <a href="files/2018_WSB.pdf">here</a></p>
+									<p>I began by looking into strain gages, an arrangement of gage grids (a foil pattern running in one axis) that varies resistance with strain. These can be mounted on an object that is under stress to measure the strain.</p>
+                                    <p class="no-margin">A tee rosette strain gage arrangement is shown below</p>
+									<img class="img-responsive" src="images/straingage.png" alt=""><br>
+                                    <p>During my research, I came across different sources of error in the gages.  One of particular interest is heat.  As the external tempurature changes, the resistance of the material in the gage also changes.  To overcome this, I used an arrangement of two gage grids positioned perpendicularly to each other, called a tee rosette. By positioning the arrangement with one gage grid running in the principal stress direction, the other grid should not be effected by strain on the material.</p>
+                                    <p>To interface with the strain gages, a half-wheatstone-bridge configuration is used that can compensate for the tempurature change, and then an instumentation amplifier increases the gain of the signal.</p>
+                                    <img class="img-responsive" src="images/halfbridgestrain.png" alt=""><p>A half-wheatstone-bridge credit to http://www.continuummechanics.org/straingauges.html</p>
+									<p>I then created a schematic with the strain gage interface circuit (among other circuits that interface with tempurature sensors, pressure sensors, potentiometers and an encoder). I used an STM32 microcontroller to read and interpret the signals and send a digital conversion over the CAN bus (A node based network) to the rest of the car.</p>
+                                    <p>To provide ground to all the components could be as easy as putting a ground layer and connecting everything to that one source. This creates an issue however with the analog components. For instance, an analog component is very sucseptable to noise.  Putting analog and digitial loads on one source can induce noise on the analog compnents from the digital loads (the nature of digital components is that they switch from high to low, creating ripples in the ground source).  To reduce this, the ground plane was split into two.  One plane connects to analog components, and the other to digital.  You can see this on the image below. </p>
+                                    <img class="img-responsive" src="images/wsb-agnd-top.png" alt="">
+                                    <p>The analog ground runs from the voltage regulator, down to each of the analog components, to the connector and then connects to digital ground.  The connection point is made small to reduce noise transfer.</p>
+                                    <p>This page is in progress</p>
 								</div>
 							</div>
 						</div>

@@ -1331,6 +1331,11 @@ input[type="text"] {
 .full-size {
     border: none !important;
     background-size: contain;
-    height: 1000px !important;
+    height: auto !important;
+    display: block !important;
     background-position: top;
+    outline: 0;
+}
+.no-margin {
+    margin: 0;
 }
