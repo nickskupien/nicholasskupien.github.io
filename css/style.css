@@ -1327,3 +1327,10 @@ input[type="text"] {
     margin-top: 1em;
     margin-bottom: .5em;
 }
+
+.full-size {
+    border: none !important;
+    background-size: contain;
+    height: 1000px !important;
+    background-position: top;
+}
