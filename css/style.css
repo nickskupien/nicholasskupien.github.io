@@ -1339,3 +1339,11 @@ input[type="text"] {
 .no-margin {
     margin: 0;
 }
+
+.owl-carousel3 {
+    height: auto !important;
+}
+
+.owl-carousel{
+    height: auto !important;
+}

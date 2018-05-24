@@ -171,6 +171,11 @@
 		contentWayPoint();
 		owlCarouselFeatureSlide();
 	});
+    
+    //wait for images
+    $(window).load(function() {
+        owlCarouselFeatureSlide();
+    });
 
 
 }());
