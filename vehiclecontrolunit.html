@@ -115,7 +115,7 @@
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box">
 <!--						<span>Portfolio</span>-->
-						<h2>Wheel Sensor Boards</h2>
+						<h2>Vehicle Control Unit</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -131,7 +131,18 @@
 							<img class="full-size work-img" src="images/vcu-3d.png"/>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
-<!--								
+                                    <h3>Introduction</h3>
+                                    <p>The VCU (vehicle control unit) collects, processes and manages data from sensors on the CAN bus providing logging and telemetry functionality. Also provides a platform for higher level traction control algorithms to be executed on through an onboard linux embedded system</h3>
+                                    <p>I routed this board for the team because other members got busy with work.  The PCB can be seen below:</p>
+                                    <img class="full-size work-img" src="images/vcu-2d-trimmed.png"/>
+                                    <h3>Quirks</h3>
+                                    <p>The VCU needs to provide telemetry data to a laptop nearby. This is done with an onboard 915MHz radio.  To route the trace running to the antenna, I used a coplanar waveguide.  The purpose of a good coplanar waveguide is to reduce standing waves when transmitting high frequency signals.  It is comparable to a coaxial cable but routed on a PCB. The thickness of dialectric and type of dialectric were taken into account to calculate trace width and distance to surrounding ground pours with a 50 ohm impedance to match the 50 ohm impedance in the antenna.  Finally, via stitching was added to the surrounding top layer and the one underneath the antenna signal. The coplanar wave guide can be seen below:</p>
+                                    <img class="full-size work-img" src="images/vcu-coplanar.png"/>
+                                    <h3>Improvements</h3>
+                                    <ol>
+                                        <li>The traces on this board could be cleaned up a bit more.  My change would be to have the middle two layers power and ground with signal layers on the top and bottom running in two different directions.  A great side effect to the new layer stackup is that the capacitance of the PCB itself would increase due to the two planes with a dielectric in the middle.</li>
+                                        <li>It would have been better to isolate all analog components to one side of the board.  The current design has a antenna inbetween the two sides of analog ground.  This might induce noise if the antenna is close enough to the analog ground pour.</li>
+                                    </ol>
 								</div>
 							</div>
 						</div>
