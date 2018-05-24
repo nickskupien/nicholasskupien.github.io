@@ -109,7 +109,7 @@
 		   margin:0,
 		   nav:true,
 		   dots: false,
-		   autoHeight: true,
+		   autoHeight: false,
 		   responsive:{
 		      0:{
 		         items:1
@@ -135,7 +135,7 @@
 		   margin:0,
 		   nav:false,
 		   dots: true,
-		   autoHeight: true,
+		   autoHeight: false,
 		   items: 1,
 		   navText: [
 		      "<i class='icon-arrow-left3 owl-direction'></i>",
@@ -151,7 +151,7 @@
 		   margin:0,
 		   nav:false,
 		   dots: false,
-		   autoHeight: true,
+		   autoHeight: false,
 		   items: 1,
 		   navText: [
 		      "<i class='icon-arrow-left3 owl-direction'></i>",
