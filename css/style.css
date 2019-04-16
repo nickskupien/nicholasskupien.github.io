@@ -3,7 +3,8 @@
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 /* =======================================================
 *
@@ -11,74 +12,151 @@
 *	Edit this section
 *
 * ======================================================= */
+/* line 118, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 body {
   font-family: "Karla", Arial, sans-serif;
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
-  background: #fafafa;
-  color: gray;
+  color: #7b7b7b;
   overflow-x: hidden;
 }
-  body.menu-show {
-    overflow: hidden;
-    position: fixed;
-    height: 100%;
-    width: 100%; }
 
+/* line 126, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+body.menu-show {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 134, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #wrapper {
   height: 100%;
   width: 100%;
-  overflow: hidden; }
-  #wrapper > div {
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden; }
+  overflow: hidden;
+}
 
+/* line 139, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#wrapper > div {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+/* line 146, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 a {
-  color: #CA82F8;
+  color: #47b0ce;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
-  a:hover {
-    text-decoration: underline;
-    color: #CA82F8; }
-  a:focus, a:active {
-    outline: none; }
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-p, span {
+/* line 151, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+a:hover {
+  text-decoration: underline;
+  color: #47b0ce;
+}
+
+/* line 156, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+a:focus, a:active {
+  outline: none;
+}
+
+/* line 162, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+p,
+span {
   margin-bottom: 1.5em;
   font-weight: 400;
-  font-family: "Karla", Arial, sans-serif; }
+  font-family: "Karla", Arial, sans-serif;
+}
 
-ul, ol {
+/* line 169, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+ul,
+ol {
   display: block;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
+/* line 175, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 span {
   font-size: 18px;
-  color: rgba(114, 114, 114, 0.8); }
+  color: rgba(114, 114, 114, 0.9);
+}
 
-h1, h2, h3, h4, h5, h6 {
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "Playfair Display", Georgia, serif;
-  margin: 0 0 30px 0; }
+/* line 180, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(46, 46, 46, 0.9);
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.8;
+}
 
+/* line 191, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+h1,
+h2 {
+  margin: 0 0 30px 0;
+}
+
+/* line 196, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px 0;
+}
+
+/* line 203, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+colour {
+  color: #47b0ce;
+}
+
+/* line 207, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.caps {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #47b0ce;
+}
+
+/* line 216, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #b7c2c2; }
+  background: #b7c2c2;
+}
 
+/* line 221, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 ::-moz-selection {
   color: #fcfcfc;
-  background: #b7c2c2; }
+  background: #b7c2c2;
+}
 
+/* line 226, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 ::selection {
   color: #fcfcfc;
-  background: #b7c2c2; }
+  background: #b7c2c2;
+}
 
+/* line 231, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.flex-vertical-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+/* line 236, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #page {
   position: relative;
-height: 100%;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -88,22 +166,40 @@ height: 100%;
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
-  transform: translateX(0%); 
-   }
-  .menu-show #page {
-    position: relative; }
-    .menu-show #page:after {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      content: '';
-      background-color: rgba(0,0,0,0.4)}
-  @media screen and (max-width: 768px) {
-    #page {
-      padding-top: 5em; } }
+  transform: translateX(0%);
+}
 
+@media screen and (max-width: 768px) {
+  /* line 236, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #page {
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 255, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.menu-show #page {
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+  transform: scale(0.99);
+  position: relative;
+}
+
+/* line 263, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.menu-show #page:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* line 277, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #main-nav {
   position: absolute;
   top: 0;
@@ -127,170 +223,274 @@ height: 100%;
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
   transform: translateX(100%);
-  overflow-y: scroll; }
-  @media screen and (max-width: 768px) {
-    #main-nav {
-      width: 300px; } }
-  #main-nav .nav-toggle {
-    position: absolute;
-    top: 25px;
-    right: 40px;
-    padding: 20px;
-    height: 44px;
-    width: 44px;
-    background: rgba(0, 0, 0, 0.05);
-    line-height: 0;
-    padding: 0 !important;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    #main-nav .nav-toggle i {
-      top: 18px !important;
-      left: 0 !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      line-height: 0;
-      text-indent: 0; }
-    #main-nav .nav-toggle.show {
-      visibility: visible;
-      opacity: 1; }
-    #main-nav .nav-toggle:hover {
-      background: black; }
-      #main-nav .nav-toggle:hover i::before, #main-nav .nav-toggle:hover i::after {
-        content: '';
-        width: 20px;
-        height: 1px;
-        background: #fff;
-        position: absolute;
-        left: 0; }
-  .menu-show #main-nav {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-    transform: translateX(0%); }
-  #main-nav ul {
-    padding: 0;
-    margin: 0 0 3em 0; }
-    @media screen and (max-width: 768px) {
-      #main-nav ul {
-        padding: 20px 0 0 0; } }
-    #main-nav ul li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: left; }
-      #main-nav ul li a {
-        display: block;
-        color: black;
-        font-size: 14px;
-        padding: 10px 0;
-        text-transform: uppercase;
-        font-weight: 400; }
-        @media screen and (max-width: 768px) {
-          #main-nav ul li a {
-            font-size: 16px; } }
-        #main-nav ul li a:hover, #main-nav ul li a:active, #main-nav ul li a:focus {
-          color: black;
-          outline: none;
-          text-decoration: none; }
-      #main-nav ul li.active a {
-        color: #CA82F8; }
-  #main-nav .form-group {
-    margin-bottom: 40px;
-    position: relative;
-    width: 100%; }
-    @media screen and (max-width: 480px) {
-      #main-nav .form-group {
-        width: 100%; } }
-    #main-nav .form-group input::-webkit-input-placeholder {
-      color: #333333; }
-    #main-nav .form-group input::-moz-input-placeholder {
-      color: #333333; }
-    #main-nav .form-group input::-ms-input-placeholder {
-      color: #333333; }
-    #main-nav .form-group input::-o-input-placeholder {
-      color: #333333; }
-    #main-nav .form-group input::input-placeholder {
-      color: #333333; }
-  #main-nav #search {
-    font-size: 14px;
-    width: 100%;
-    padding-right: 3em;
-    border: none;
-    border: 2px solid #f2f2f2;
-    background: #fafafa;
-    color: #333333 !important; }
-  #main-nav button {
-    position: absolute;
-    top: 0;
-    right: -4px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    border-radius: 0;
-    background: #CA82F8;
-    color: #fff;
-    border: none;
-    padding: 16px; }
-  #main-nav #email {
-    font-size: 18px;
-    width: 100%;
-    border: none;
-    border: 2px solid #fff;
-    background: #fff;
-    color: #333333 !important; }
-  #main-nav .gallery {
-    float: left;
-    width: 50%;
-    height: 150px;
-    position: relative;
-    display: table;
-    z-index: 0;
-    text-decoration: none; }
-    @media screen and (max-width: 768px) {
-      #main-nav .gallery {
-        width: 25%; } }
-    @media screen and (max-width: 480px) {
-      #main-nav .gallery {
-        width: 50%; } }
-    #main-nav .gallery:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: '';
-      background: rgba(0, 0, 0, 0.3);
-      opacity: 0;
-      z-index: -1;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
-    #main-nav .gallery span {
-      display: table-cell;
-      vertical-align: middle;
-      height: 150px;
-      opacity: 0;
-      -webkit-transition: 1s;
-      -o-transition: 1s;
-      transition: 1s; }
-      #main-nav .gallery span i {
-        color: #fff;
-        font-size: 20px; }
-    #main-nav .gallery:hover:after, #main-nav .gallery:focus:after {
-      opacity: 1; }
-    #main-nav .gallery:hover span, #main-nav .gallery:focus span {
-      opacity: 1; }
+  overflow-y: scroll;
+}
 
+@media screen and (max-width: 768px) {
+  /* line 277, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #main-nav {
+    width: 300px;
+  }
+}
+
+/* line 306, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .nav-toggle {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 20px;
+  height: 44px;
+  width: 44px;
+  background: rgba(0, 0, 0, 0.05);
+  line-height: 0;
+  padding: 0 !important;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 321, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .nav-toggle i {
+  top: 18px !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0;
+  text-indent: 0;
+}
+
+/* line 330, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .nav-toggle.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 335, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .nav-toggle:hover {
+  background: black;
+}
+
+/* line 340, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .nav-toggle:hover i::before, #main-nav .nav-toggle:hover i::after {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+}
+
+/* line 353, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.menu-show #main-nav {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+/* line 363, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav ul {
+  padding: 0;
+  margin: 0 0 3em 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 363, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #main-nav ul {
+    padding: 20px 0 0 0;
+  }
+}
+
+/* line 372, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+/* line 378, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav ul li a {
+  display: block;
+  color: black;
+  font-size: 14px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 378, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #main-nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* line 390, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav ul li a:hover, #main-nav ul li a:active, #main-nav ul li a:focus {
+  color: black;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 400, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav ul li.active a {
+  color: #47b0ce;
+}
+
+/* line 409, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .form-group {
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 409, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #main-nav .form-group {
+    width: 100%;
+  }
+}
+
+/* line 418, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .form-group input::-webkit-input-placeholder {
+  color: #616161;
+}
+
+/* line 422, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .form-group input::-moz-input-placeholder {
+  color: #616161;
+}
+
+/* line 426, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .form-group input::-ms-input-placeholder {
+  color: #616161;
+}
+
+/* line 430, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .form-group input::-o-input-placeholder {
+  color: #616161;
+}
+
+/* line 434, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .form-group input::input-placeholder {
+  color: #616161;
+}
+
+/* line 439, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav #search {
+  font-size: 14px;
+  width: 100%;
+  padding-right: 3em;
+  border: none;
+  border: 2px solid #bababa;
+  background: #c7c7c7;
+  color: #616161 !important;
+}
+
+/* line 449, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav button {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background: #47b0ce;
+  color: #fff;
+  border: none;
+  padding: 16px;
+}
+
+/* line 460, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav #email {
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  border: 2px solid #fff;
+  background: #fff;
+  color: #616161 !important;
+}
+
+/* line 470, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .gallery {
+  float: left;
+  width: 50%;
+  height: 150px;
+  position: relative;
+  display: table;
+  z-index: 0;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 470, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #main-nav .gallery {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 470, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #main-nav .gallery {
+    width: 50%;
+  }
+}
+
+/* line 487, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .gallery:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: rgba(46, 46, 46, 0.3);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 500, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .gallery span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+/* line 507, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .gallery span i {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* line 515, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .gallery:hover:after, #main-nav .gallery:focus:after {
+  opacity: 1;
+}
+
+/* line 519, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#main-nav .gallery:hover span, #main-nav .gallery:focus span {
+  opacity: 1;
+}
+
+/* line 529, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 header {
   padding: 2em 0;
   position: absolute;
@@ -298,34 +498,55 @@ header {
   left: 0;
   right: 0;
   z-index: 9;
-  margin: 0 auto; }
-  @media screen and (max-width: 768px) {
-    header {
-      padding: 2em 0; } }
-  header .navbar-brand {
-    float: left; }
-    header .navbar-brand .logo {
-      font-size: 20px;
-      text-transform: uppercase;
-      color: #000;
-      font-weight: 400;
-      letter-spacing: 5px;
-      padding: 7px;
-      border: 1px solid #000;
-      display: block;
-      text-align: center;
-      background: #000; }
-      header .navbar-brand .logo span {
-        display: block;
-        margin-bottom: 0;
-        line-height: 1.2;
-        color: #fff; }
-      header .navbar-brand .logo:hover {
-        text-decoration: none !important; }
-      header .navbar-brand .logo:active, header .navbar-brand .logo:focus {
-        outline: none;
-        text-decoration: none; }
+  margin: 0 auto;
+}
 
+@media screen and (max-width: 768px) {
+  /* line 529, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  header {
+    padding: 2em 0;
+  }
+}
+
+/* line 542, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+header .navbar-brand {
+  float: left;
+}
+
+/* line 545, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+header .navbar-brand .logo {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #2E2E2E;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding: 7px;
+  border: 1px solid #2E2E2E;
+  display: block;
+  text-align: center;
+  background: #2E2E2E;
+}
+
+/* line 557, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+header .navbar-brand .logo span {
+  display: block;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* line 564, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+header .navbar-brand .logo:hover {
+  text-decoration: none !important;
+}
+
+/* line 569, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+header .navbar-brand .logo:active, header .navbar-brand .logo:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 580, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #services,
 #contact,
 #work,
@@ -334,458 +555,381 @@ header {
 #progress,
 #contact,
 #about {
-  padding: 10em 0;
+  padding: 5em 0;
   clear: both;
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    #services,
-    #contact,
-    #work,
-    #blog,
-    #testimony,
-    #progress,
-    #contact,
-    #about {
-      padding: 5em 0; } }
+  position: relative;
+}
 
+@media screen and (max-width: 768px) {
+  /* line 580, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #services,
+  #contact,
+  #work,
+  #blog,
+  #testimony,
+  #progress,
+  #contact,
+  #about {
+    padding: 1em 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 598, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #about {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* line 603, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #about .flex-vertical-center {
+    display: block !important;
+  }
+}
+
+/* line 611, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .rotate {
   position: absolute;
   top: .4em;
-  left: -50px; }
-  .rotate .heading {
-    font-family: "Karla", Arial, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1em;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-transform-origin: left top 0;
-    -moz-transform-origin: left top 0;
-    -ms-transform-origin: left top 0;
-    -o-transform-origin: left top 0;
-    transform-origin: left top 0;
-    position: relative; }
-    .rotate .heading:after {
-      position: absolute;
-      top: 8px;
-      right: -40px;
-      content: '';
-      background: #000;
-      width: 40px;
-      height: 1px; }
+  left: -50px;
+}
 
+/* line 616, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.rotate .heading {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: left top 0;
+  -moz-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+  -o-transform-origin: left top 0;
+  transform-origin: left top 0;
+  position: relative;
+}
+
+/* line 633, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.rotate .heading:after {
+  position: absolute;
+  top: 8px;
+  right: -40px;
+  content: '';
+  background: #2E2E2E;
+  width: 40px;
+  height: 1px;
+}
+
+/* line 647, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.heading-section span {
+  display: block;
+  margin-bottom: 0;
+  color: #2E2E2E;
+  font-size: 50px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 647, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  .heading-section span {
+    font-size: 40px;
+  }
+}
+
+/* line 663, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .about-desc {
-  padding-top: 3em; }
-  .about-desc h2 {
-    line-height: 1.3; }
-    .about-desc h2 span {
-      display: block;
-      margin-bottom: 0;
-      color: #000;
-      font-size: 50px;
-      font-family: "Playfair Display", Georgia, serif; }
-  .about-desc .desc {
-    padding-left: 6em;
-    position: relative; }
-  .about-desc .rotate {
-    position: absolute;
-    top: 7px;
-    left: 30px; }
-    .about-desc .rotate .heading {
-      font-family: "Karla", Arial, sans-serif;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1em;
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      transform: rotate(90deg);
-      -webkit-transform-origin: left top 0;
-      -ms-transform-origin: left top 0;
-      transform-origin: left top 0;
-      position: relative; }
-      .about-desc .rotate .heading:after {
-        position: absolute;
-        top: 8px;
-        right: -40px;
-        content: '';
-        background: #000;
-        width: 40px;
-        height: 1px; }
+  padding-top: 0em;
+}
 
+/* line 666, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.about-desc .desc {
+  position: relative;
+}
+
+/* line 671, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.about-desc .rotate {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+}
+
+/* line 676, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.about-desc .rotate .heading {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  position: relative;
+}
+
+/* line 689, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.about-desc .rotate .heading:after {
+  position: absolute;
+  top: 8px;
+  right: -40px;
+  content: '';
+  background: #2E2E2E;
+  width: 40px;
+  height: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  /* line 702, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  .about-img {
+    margin-bottom: 1.5em;
+  }
+}
+
+/* line 709, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .bold {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   font-size: 250px;
-  color: #f0f0f0;
-  font-weight: 700; }
-  @media screen and (max-width: 768px) {
-    .bold {
-      font-size: 60px; } }
+  color: #ededed;
+  font-weight: 700;
+}
 
+@media screen and (max-width: 768px) {
+  /* line 709, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  .bold {
+    font-size: 60px;
+  }
+}
+
+/* line 724, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .intro-heading {
-  margin-bottom: 3em; }
-  .intro-heading h2 {
-    font-size: 34px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 1.5em;
-    color: #000;
-    position: relative; }
-  .intro-heading span {
-    display: block;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    color: #bfbfbf;
-    font-weight: 600; }
+  margin-bottom: 3em;
+}
 
+/* line 727, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.intro-heading h2 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  color: #2E2E2E;
+  position: relative;
+}
+
+/* line 736, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.intro-heading span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #c7c7c7;
+  font-weight: 600;
+}
+
+/* line 749, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .services-img,
-.work-img,
 .gallery {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+}
 
-.progress-head {
-  font-size: 22px; }
+/* line 761, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#services .container {
+  margin-bottom: -2em;
+}
 
-.progress {
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  background: none;
-  margin: 0 auto;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  position: relative; }
+@media screen and (max-width: 992px) {
+  /* line 761, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  #services .container {
+    margin-bottom: 0px;
+  }
+}
 
-.progress:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.progress > span {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 1; }
-
-.progress .progress-left {
-  left: 0; }
-
-.progress .progress-bar {
-  width: 100%;
-  height: 100%;
-  background: none;
-  border-width: 2px;
-  border-style: solid;
-  position: absolute;
-  top: 0;
-  border: 1px solid #000; }
-
-.progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
-  transform-origin: center left; }
-
-.progress .progress-right {
-  right: 0; }
-
-.progress .progress-right .progress-bar {
-  left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-right: 0;
-  -webkit-transform-origin: center right;
-  -ms-transform-origin: center right;
-  transform-origin: center right;
-  -webkit-animation: loading-1 1.8s linear forwards;
-  animation: loading-1 1.8s linear forwards; }
-
-.progress .progress-value {
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  font-size: 32px;
-  line-height: 125px;
-  text-align: center;
-  position: absolute;
-  top: 7.5%;
-  left: 7.5%; }
-
-.progress.blue .progress-bar {
-  border-color: #049dff; }
-
-.progress.blue .progress-value {
-  color: #049dff; }
-
-.progress.blue .progress-left .progress-bar {
-  -webkit-animation: loading-2 1.5s linear forwards 1.8s;
-  animation: loading-2 1.5s linear forwards 1.8s; }
-
-.progress.yellow .progress-bar {
-  border-color: #fdba04; }
-
-.progress.yellow .progress-value {
-  color: #fdba04; }
-
-.progress.yellow .progress-left .progress-bar {
-  -webkit-animation: loading-3 1s linear forwards 1.8s;
-  animation: loading-3 1s linear forwards 1.8s; }
-
-.progress.pink .progress-bar {
-  border-color: #ed687c; }
-
-.progress.pink .progress-value {
-  color: #ed687c; }
-
-.progress.pink .progress-left .progress-bar {
-  -webkit-animation: loading-4 0.4s linear forwards 1.8s;
-  animation: loading-4 0.4s linear forwards 1.8s; }
-
-.progress.green .progress-bar {
-  border-color: #1abc9c; }
-
-.progress.green .progress-value {
-  color: #1abc9c; }
-
-.progress.green .progress-left .progress-bar {
-  -webkit-animation: loading-5 1.2s linear forwards 1.8s;
-  animation: loading-5 1.2s linear forwards 1.8s; }
-
-@-webkit-keyframes loading-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); } }
-
-@keyframes loading-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); } }
-
-@-webkit-keyframes loading-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(150deg);
-    transform: rotate(150deg); } }
-
-@keyframes loading-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(150deg);
-    transform: rotate(150deg); } }
-
-@-webkit-keyframes loading-3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg); } }
-
-@keyframes loading-3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg); } }
-
-@-webkit-keyframes loading-4 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); } }
-
-@keyframes loading-4 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); } }
-
-@-webkit-keyframes loading-5 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(125deg);
-    transform: rotate(125deg); } }
-
-@keyframes loading-5 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(125deg);
-    transform: rotate(125deg); } }
-
-@media only screen and (max-width: 990px) {
-  .progress {
-    margin-bottom: 20px; } }
-
-.services-flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  width: 100%; }
-  .services-flex .one-third {
-    width: 55%;
-    padding: 3em 2em 3em 0; }
-  .services-flex .one-forth {
-    width: 45%; }
-    .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
-      display: inline-block; }
-      @media screen and (max-width: 768px) {
-        .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
-          height: 400px; } }
-  .services-flex .one-third, .services-flex .one-forth {
-    display: inline-block; }
-    @media screen and (max-width: 768px) {
-      .services-flex .one-third, .services-flex .one-forth {
-        width: 100%;
-        display: block; } }
-
+/* line 770, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .services {
-  margin-bottom: 4em; }
-  .services h3 {
-    font-family: "Karla", Arial, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700; }
-  .services ul li {
-    list-style: none;
-    margin-bottom: 10px; }
-    .services ul li::before {
-      content: '\2022';
-      color: #000;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em; }
+  margin-bottom: 1em;
+}
 
-.work-entry {
-  display: block;
-  margin-bottom: 5em;
+/* line 773, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.services h3 {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 780, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.services ul {
+  margin-bottom: 0px;
+}
+
+/* line 783, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.services ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* line 787, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.services ul li::before {
+  content: '\2022';
+  color: #2E2E2E;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* line 803, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card {
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  padding: 3em;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+/* line 820, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .link {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: table;
   width: 100%;
-  float: left; }
-  .work-entry .work-img {
-    width: 100%;
-    height: 700px;
-    margin-bottom: 40px;
-    display: table;
-    text-align: center;
-    text-decoration: none; }
-    .work-entry .work-img .display-t {
-      display: table-cell;
-      vertical-align: middle;
-      height: 700px;
-      position: relative;
-      z-index: 0; }
-      .work-entry .work-img .display-t:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        background: rgba(0, 0, 0, 0.4);
-        z-index: -1;
-        opacity: 0;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-      .work-entry .work-img .display-t .work-name {
-        display: inline-block;
-        padding: 4em 3em;
-        background: #fff;
-        -webkit-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        -moz-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        -ms-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        -o-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        z-index: 1;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        .work-entry .work-img .display-t .work-name h2 {
-          margin: 0;
-          -webkit-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s; }
-    .work-entry .work-img:hover .display-t:after {
-      opacity: 1; }
-    .work-entry .work-img:hover .display-t .work-name {
-      padding: 4.5em 3.5em; }
-      .work-entry .work-img:hover .display-t .work-name h2 {
-        font-size: 34px; }
-    @media screen and (max-width: 768px) {
-      .work-entry .work-img {
-        height: 400px; }
-        .work-entry .work-img .display-t {
-          height: 400px; } }
-  .work-entry .desc .read {
-    text-align: right; }
-    .work-entry .desc .read a {
-      color: #000;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 12px;
-      position: relative; }
-      .work-entry .desc .read a:after {
-        position: absolute;
-        top: 7px;
-        left: -60px;
-        right: 0;
-        content: '';
-        width: 40px;
-        height: 1px;
-        background: #000; }
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
 
+/* line 829, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .link .read {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 12px;
+  transform-origin: 0;
+  position: relative;
+}
+
+/* line 836, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .link .read:after {
+  position: absolute;
+  top: 10px;
+  left: 103px;
+  content: '';
+  background: #47b0ce;
+  width: 30px;
+  height: 1px;
+}
+
+/* line 848, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card:hover {
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.05), 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* line 856, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card:hover .link {
+  opacity: 1;
+}
+
+/* line 862, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .row {
+  margin: 0px;
+}
+
+/* line 866, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .column {
+  padding: 0px;
+}
+
+/* line 870, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-text-container {
+  height: 100%;
+}
+
+/* line 873, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-text-container span {
+  margin-top: -.2em;
+  margin-bottom: .2em;
+  font-size: 40px;
+}
+
+/* line 879, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-text-container .job-title {
+  font-size: 20px;
+}
+
+/* line 884, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-text-container .work-description {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+/* line 892, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-img-container {
+  left: 0px;
+}
+
+/* line 895, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-img-container img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+}
+
+/* line 902, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-img-container .left {
+  filter: drop-shadow(15px 10px 10px rgba(0, 0, 0, 0.1));
+}
+
+/* line 906, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-img-container .right {
+  filter: drop-shadow(-15px 10px 10px rgba(0, 0, 0, 0.1));
+}
+
+/* line 913, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.work-card .work-text-container,
+.work-card .work-img-container {
+  height: 350px;
+}
+
+/* line 924, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #blog .owl-carousel {
-  z-index: 0; }
+  z-index: 0;
+}
 
+/* line 928, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #blog .owl-carousel .owl-stage-outer {
-  z-index: -1; }
+  z-index: -1;
+}
 
+/* line 932, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #blog .owl-theme .owl-controls {
   margin-top: -10px;
   z-index: 1;
@@ -793,8 +937,10 @@ header {
   top: -40px;
   left: 0;
   right: 0;
-  margin-top: -30px; }
+  margin-top: -30px;
+}
 
+/* line 942, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #blog .owl-theme .owl-controls .owl-nav [class*=owl-] {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -806,169 +952,201 @@ header {
   background: transparent;
   background: #fff;
   padding: 5px 5px;
-  opacity: 1; }
-  #blog .owl-theme .owl-controls .owl-nav [class*=owl-] .owl-direction {
-    background: transparent;
-    color: #000;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none; }
-
-.article {
-  display: block;
-  margin-bottom: 6em; }
-  .article .blog-img {
-    margin-bottom: 50px;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    width: 100%; }
-    .article .blog-img img {
-      position: relative;
-      max-width: 100%;
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: 0.7s;
-      -o-transition: 0.7s;
-      transition: 0.7s; }
-    .article .blog-img .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
-    .article .blog-img .link {
-      position: absolute;
-      bottom: 0;
-      left: 90%;
-      display: table;
-      width: 100%;
-      opacity: 0;
-      -webkit-transition: 0.7s;
-      -o-transition: 0.7s;
-      transition: 0.7s; }
-      .article .blog-img .link .read {
-        display: table-cell;
-        vertical-align: middle;
-        font-family: "Karla", Arial, sans-serif;
-        color: #fff;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        -webkit-transform-origin: 0;
-        -ms-transform-origin: 0;
-        transform-origin: 0;
-        position: relative; }
-        .article .blog-img .link .read:after {
-          position: absolute;
-          top: 10px;
-          left: -50px;
-          content: '';
-          background: #fff;
-          width: 40px;
-          height: 1px; }
-    .article .blog-img:hover .overlay {
-      opacity: 1; }
-    .article .blog-img:hover .link {
-      opacity: 1;
-      bottom: 50px; }
-    .article .blog-img:hover img {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
-      transform: scale(1.1); }
-  .article .desc {
-    position: relative; }
-    .article .desc .meta {
-      position: absolute;
-      top: -80px;
-      left: 20px;
-      background: #FFE9E3;
-      color: #000;
-      padding: 20px 10px;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      -webkit-transition: 1s;
-      -o-transition: 1s;
-      transition: 1s;
-      -webkit-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-      -moz-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-      -ms-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-      -o-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-      box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21); }
-    .article .desc h2 {
-      font-size: 24px; }
-      .article .desc h2 a {
-        text-decoration: none;
-        color: #000; }
-  .article:hover .meta {
-    background: #fff; }
-
-#testimony{
-  display: none;
+  opacity: 1;
 }
 
-#testimony .owl-theme .owl-dots .owl-dot.active span,
-#testimony .owl-theme .owl-dots .owl-dot:hover span {
-  height: 3px;
-  background: #000; }
+/* line 950, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#blog .owl-theme .owl-controls .owl-nav [class*=owl-] .owl-direction {
+  background: transparent;
+  color: #2E2E2E;
+  box-shadow: none;
+  border: none;
+}
 
-#testimony .owl-theme .owl-dots .owl-dot span {
-  width: 30px;
-  height: 2px;
-  background: #e6e6e6;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0; }
+/* line 967, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.owl-controls {
+  margin: 0px !important;
+}
 
-.testimony blockquote {
-  border: none; }
-  .testimony blockquote p {
-    font-family: "Playfair Display", Georgia, serif;
-    color: #000;
-    font-size: 30px; }
-  .testimony blockquote span {
-    font-family: "Playfair Display", Georgia, serif;
-    color: #000;
-    font-size: 30px; }
+/* line 971, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article {
+  display: block;
+  margin-bottom: 6em;
+}
 
+/* line 975, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img {
+  margin-bottom: 50px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 982, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img img {
+  position: relative;
+  max-width: 100%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+/* line 993, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 1004, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img .link {
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  display: table;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+/* line 1013, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img .link .read {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Karla", Arial, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: 0;
+  position: relative;
+}
+
+/* line 1029, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img .link .read:after {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  content: '';
+  background: #fff;
+  width: 40px;
+  height: 1px;
+}
+
+/* line 1042, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img:hover .overlay {
+  opacity: 1;
+}
+
+/* line 1046, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img:hover .link {
+  opacity: 1;
+  bottom: 50px;
+}
+
+/* line 1051, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .blog-img:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 1061, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .desc {
+  position: relative;
+}
+
+/* line 1064, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .desc .meta {
+  position: absolute;
+  top: -80px;
+  left: 20px;
+  background: #FFE9E3;
+  color: #2E2E2E;
+  padding: 20px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+  -ms-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+  -o-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+}
+
+/* line 1082, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .desc h2 {
+  font-size: 24px;
+}
+
+/* line 1085, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article .desc h2 a {
+  text-decoration: none;
+  color: #2E2E2E;
+}
+
+/* line 1093, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.article:hover .meta {
+  background: #fff;
+}
+
+/* line 1099, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .f-entry {
   position: relative;
-  margin-bottom: 40px; }
-  .f-entry .desc h3 {
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 10px; }
-    .f-entry .desc h3 a {
-      color: #4d4d4d;
-      text-decoration: none; }
-  .f-entry .desc span {
-    color: #000;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 10px; }
+  margin-bottom: 40px;
+}
 
+/* line 1104, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.f-entry .desc h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* line 1109, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.f-entry .desc h3 a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+/* line 1115, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.f-entry .desc span {
+  color: #2E2E2E;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 1127, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn {
-  margin-right: 4px;
-  margin-bottom: 4px;
+  margin: 0px;
   font-size: 13px !important;
   font-weight: 400;
   text-transform: uppercase;
@@ -980,218 +1158,344 @@ header {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 8px 20px; }
-  .btn.btn-md {
-    padding: 8px 20px !important; }
-  .btn.btn-lg {
-    padding: 18px 36px !important; }
-  .btn:hover, .btn:active, .btn:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline: none !important; }
+  padding: 8px 20px;
+}
 
+/* line 1137, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn.btn-md {
+  padding: 8px 20px !important;
+}
+
+/* line 1141, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn.btn-lg {
+  padding: 18px 36px !important;
+}
+
+/* line 1145, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn:hover, .btn:active, .btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* line 1153, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn-primary {
-  background: #CA82F8;
+  background: #47b0ce;
   color: #fff;
-  border: 2px solid #CA82F8; }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #d49af9 !important;
-    border-color: #d49af9 !important; }
-  .btn-primary.btn-outline {
-    background: transparent;
-    color: #4d4d4d;
-    border: 1px solid #d9d9d9; }
-    .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background: #CA82F8;
-      color: #fff; }
+  border: 2px solid #47b0ce;
+}
 
+/* line 1158, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #5bb9d3 !important;
+  border-color: #5bb9d3 !important;
+}
+
+/* line 1165, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #7b7b7b;
+  border: 1px solid #c7c7c7;
+}
+
+/* line 1170, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+  background: #47b0ce;
+  color: #fff;
+}
+
+/* line 1179, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn-success {
   background: #5cb85c;
   color: #fff;
-  border: 2px solid #5cb85c; }
-  .btn-success:hover, .btn-success:focus, .btn-success:active {
-    background: #4cae4c !important;
-    border-color: #4cae4c !important; }
-  .btn-success.btn-outline {
-    background: transparent;
-    color: #5cb85c;
-    border: 2px solid #5cb85c; }
-    .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
-      background: #5cb85c;
-      color: #fff; }
+  border: 2px solid #5cb85c;
+}
 
+/* line 1184, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background: #4cae4c !important;
+  border-color: #4cae4c !important;
+}
+
+/* line 1191, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-success.btn-outline {
+  background: transparent;
+  color: #5cb85c;
+  border: 2px solid #5cb85c;
+}
+
+/* line 1196, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+  background: #5cb85c;
+  color: #fff;
+}
+
+/* line 1205, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn-info {
   background: #5bc0de;
   color: #fff;
-  border: 2px solid #5bc0de; }
-  .btn-info:hover, .btn-info:focus, .btn-info:active {
-    background: #46b8da !important;
-    border-color: #46b8da !important; }
-  .btn-info.btn-outline {
-    background: transparent;
-    color: #5bc0de;
-    border: 2px solid #5bc0de; }
-    .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
-      background: #5bc0de;
-      color: #fff; }
+  border: 2px solid #5bc0de;
+}
 
+/* line 1210, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background: #46b8da !important;
+  border-color: #46b8da !important;
+}
+
+/* line 1217, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-info.btn-outline {
+  background: transparent;
+  color: #5bc0de;
+  border: 2px solid #5bc0de;
+}
+
+/* line 1222, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+  background: #5bc0de;
+  color: #fff;
+}
+
+/* line 1231, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn-warning {
   background: #f0ad4e;
   color: #fff;
-  border: 2px solid #f0ad4e; }
-  .btn-warning:hover, .btn-warning:focus, .btn-warning:active {
-    background: #eea236 !important;
-    border-color: #eea236 !important; }
-  .btn-warning.btn-outline {
-    background: transparent;
-    color: #f0ad4e;
-    border: 2px solid #f0ad4e; }
-    .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
-      background: #f0ad4e;
-      color: #fff; }
+  border: 2px solid #f0ad4e;
+}
 
+/* line 1236, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+  background: #eea236 !important;
+  border-color: #eea236 !important;
+}
+
+/* line 1243, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-warning.btn-outline {
+  background: transparent;
+  color: #f0ad4e;
+  border: 2px solid #f0ad4e;
+}
+
+/* line 1248, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
+  background: #f0ad4e;
+  color: #fff;
+}
+
+/* line 1257, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn-danger {
   background: #d9534f;
   color: #fff;
-  border: 2px solid #d9534f; }
-  .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-    background: #d43f3a !important;
-    border-color: #d43f3a !important; }
-  .btn-danger.btn-outline {
-    background: transparent;
-    color: #d9534f;
-    border: 2px solid #d9534f; }
-    .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
-      background: #d9534f;
-      color: #fff; }
+  border: 2px solid #d9534f;
+}
 
+/* line 1262, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background: #d43f3a !important;
+  border-color: #d43f3a !important;
+}
+
+/* line 1269, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-danger.btn-outline {
+  background: transparent;
+  color: #d9534f;
+  border: 2px solid #d9534f;
+}
+
+/* line 1274, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+  background: #d9534f;
+  color: #fff;
+}
+
+/* line 1283, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn-outline {
   background: none;
-  border: 2px solid gray;
+  border: 2px solid #aeaeae;
   font-size: 16px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
-  .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+  transition: 0.3s;
+}
 
+/* line 1289, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  box-shadow: none;
+}
+
+/* line 1296, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .row-padded-bottom {
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+}
 
+/* line 1300, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .col-pb-sm {
-  margin-bottom: 5em !important; }
-  .col-pb-sm:last-child {
-    margin-bottom: 0; }
+  margin-bottom: 5em !important;
+}
 
+/* line 1303, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.col-pb-sm:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1308, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .btn.with-arrow {
   position: relative;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
-  .btn.with-arrow i {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    margin-top: -8px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
-  .btn.with-arrow:hover {
-    padding-right: 50px; }
-    .btn.with-arrow:hover i {
-      color: #fff;
-      right: 18px;
-      visibility: visible;
-      opacity: 1; }
+  transition: 0.3s;
+}
 
+/* line 1312, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn.with-arrow i {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -8px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* line 1322, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn.with-arrow:hover {
+  padding-right: 50px;
+}
+
+/* line 1325, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.btn.with-arrow:hover i {
+  color: #fff;
+  right: 18px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 1337, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle {
   cursor: pointer;
-  text-decoration: none; }
-  .nav-toggle.active i::before, .nav-toggle.active i::after {
-    background: #000; }
-  .nav-toggle.dark.active i::before, .nav-toggle.dark.active i::after {
-    background: #000; }
-  .nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
-    outline: none;
-    border-bottom: none !important; }
-  .nav-toggle i {
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    width: 20px;
-    height: 2px;
-    color: #000;
-    font: bold 14px/.4 Helvetica;
-    text-transform: uppercase;
-    text-indent: -55px;
-    background: #000;
-    -webkit-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out; }
-    .menu-show .nav-toggle i {
-      background: #000;
-      color: #fff; }
-    .nav-toggle i::before, .nav-toggle i::after {
-      content: '';
-      width: 20px;
-      height: 2px;
-      background: #000;
-      position: absolute;
-      left: 0;
-      -webkit-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s; }
-      .menu-show .nav-toggle i::before, .menu-show .nav-toggle i::after {
-        background: #333333; }
-  .nav-toggle.dark i {
-    position: relative;
-    color: #fff;
-    background: #fff;
-    -webkit-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out; }
-    .nav-toggle.dark i::before, .nav-toggle.dark i::after {
-      background: #fff;
-      -webkit-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s; }
+  text-decoration: none;
+}
 
+/* line 1343, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.nav-toggle.active i::before, .nav-toggle.active i::after {
+  background: #2E2E2E;
+}
+
+/* line 1352, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.nav-toggle.dark.active i::before, .nav-toggle.dark.active i::after {
+  background: #2E2E2E;
+}
+
+/* line 1359, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+
+/* line 1366, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 20px;
+  height: 2px;
+  color: #2E2E2E;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #2E2E2E;
+  transition: all .2s ease-out;
+}
+
+/* line 1378, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.menu-show .nav-toggle i {
+  background: #2E2E2E;
+  color: #fff;
+}
+
+/* line 1383, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.nav-toggle i::before, .nav-toggle i::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #2E2E2E;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* line 1392, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.menu-show .nav-toggle i::before, .menu-show .nav-toggle i::after {
+  background: #616161;
+}
+
+/* line 1401, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.nav-toggle.dark i {
+  position: relative;
+  color: #fff;
+  background: #fff;
+  transition: all .2s ease-out;
+}
+
+/* line 1407, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.nav-toggle.dark i::before, .nav-toggle.dark i::after {
+  background: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* line 1416, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle i::before {
-  top: -7px; }
+  top: -7px;
+}
 
+/* line 1420, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle i::after {
-  bottom: -7px; }
+  bottom: -7px;
+}
 
+/* line 1424, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle:hover i::before {
-  top: -10px; }
+  top: -10px;
+}
 
+/* line 1428, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle:hover i::after {
-  bottom: -10px; }
+  bottom: -10px;
+}
 
+/* line 1432, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle.active i {
-  background: transparent; }
+  background: transparent;
+}
 
+/* line 1436, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
   -ms-transform: rotateZ(45deg);
   -o-transform: rotateZ(45deg);
-  transform: rotateZ(45deg); }
+  transform: rotateZ(45deg);
+}
 
+/* line 1445, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
   -ms-transform: rotateZ(-45deg);
   -o-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg); }
+  transform: rotateZ(-45deg);
+}
 
+/* line 1454, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .nav-toggle {
   float: right;
   z-index: 1003;
@@ -1199,41 +1503,61 @@ header {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-  margin-top: 0; }
-  @media screen and (max-width: 768px) {
-    .nav-toggle {
-      display: block;
-      top: 0px; } }
+  margin-top: 0;
+}
 
+@media screen and (max-width: 768px) {
+  /* line 1454, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+  .nav-toggle {
+    display: block;
+    top: 0px;
+  }
+}
+
+/* line 1472, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .contact-info {
   margin-bottom: 4em;
-  padding: 0; }
-  .contact-info li {
-    list-style: none;
-    margin: 0 0 30px 0;
-    position: relative;
-    padding-left: 60px; }
-    .contact-info li span {
-      position: absolute;
-      top: -0.3em;
-      left: 0;
-      width: 40px;
-      height: 40px;
-      background: #fff;
-      display: table;
-      text-align: center;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      border-radius: 50%; }
-    .contact-info li i {
-      display: table-cell;
-      vertical-align: middle;
-      font-size: 16px;
-      color: rgba(0, 0, 0, 0.5); }
-    .contact-info li a {
-      color: #CA82F8; }
+  padding: 0;
+}
 
+/* line 1476, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.contact-info li {
+  list-style: none;
+  margin: 0 0 30px 0;
+  position: relative;
+  padding-left: 60px;
+}
+
+/* line 1482, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.contact-info li span {
+  position: absolute;
+  top: -0.3em;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: table;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 1495, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.contact-info li i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 16px;
+  color: rgba(46, 46, 46, 0.5);
+}
+
+/* line 1502, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.contact-info li a {
+  color: #47b0ce;
+}
+
+/* line 1509, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1247,103 +1571,111 @@ header {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
-  border-radius: 0px; }
-  .form-control:focus, .form-control:active {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: transparent; }
+  border-radius: 0px;
+}
 
+/* line 1522, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+.form-control:focus, .form-control:active {
+  box-shadow: none;
+  border: transparent;
+}
+
+/* line 1530, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 input[type="text"] {
-  height: 50px; }
+  height: 50px;
+}
 
+/* line 1534, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .form-group {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
+/* line 1541, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .social-icons a:hover, .social-icons a:focus {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+}
 
+/* line 1547, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .social-icons i {
   font-size: 24px;
-  color: #CA82F8; }
+  color: #47b0ce;
+}
 
+/* line 1554, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 #footer {
-/*  padding: 8em 0;*/
-  padding-bottom: 20px;
   display: block;
-  width: 100%; }
-  #footer h2 {
-    color: #000;
-    letter-spacing: 1px;
-    font-weight: 300;
-    margin-bottom: 2em; }
-  #footer p:last-child {
-    margin-bottom: 0; }
-  #footer p.social-icons a:hover, #footer p.social-icons a:focus {
-    text-decoration: none !important; }
-  #footer p.social-icons i {
-    font-size: 24px;
-    color: #CA82F8; }
-  #footer p .block {
-    color: #1a1a1a;
-    font-size: 14px; }
-  #footer .subscribe .form-control {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    -o-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    background: #fafafa;
-    font-weight: 400;
-    margin-bottom: 5px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    border-radius: 30px; }
-    #footer .subscribe .form-control:focus, #footer .subscribe .form-control:active {
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      border: 2px solid rgba(202, 130, 248, 0.8); }
-  #footer .subscribe .btn-custom {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    border-radius: 30px; }
+  width: 100%;
+}
 
+/* line 1560, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer h2 {
+  color: #2E2E2E;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+
+/* line 1570, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1577, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer p.social-icons a:hover, #footer p.social-icons a:focus {
+  text-decoration: none !important;
+}
+
+/* line 1583, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer p.social-icons i {
+  font-size: 24px;
+  color: #47b0ce;
+}
+
+/* line 1589, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer p .block {
+  color: #484848;
+  font-size: 14px;
+}
+
+/* line 1596, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer .subscribe .form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  background: #c7c7c7;
+  font-weight: 400;
+  margin-bottom: 5px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* line 1610, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer .subscribe .form-control:focus, #footer .subscribe .form-control:active {
+  box-shadow: none;
+  border: 2px solid rgba(71, 176, 206, 0.8);
+}
+
+/* line 1617, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
+#footer .subscribe .btn-custom {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* line 1627, ../../../../../../../../../../../../../Volumes/El Capitan/Users/nicholasskupien/Documents/GitHub/nicholasskupien.github.io/sass/style.scss */
 .js .animate-box {
-  opacity: 0; }
-
-.about-img {
-
+  opacity: 0;
 }
 
-.nav-heading {
-    border-bottom: 1px solid gray;
-    margin-top: 1em;
-    margin-bottom: .5em;
-}
-
-.full-size {
-    border: none !important;
-    background-size: contain;
-    height: auto !important;
-    display: block !important;
-    background-position: top;
-    outline: 0;
-}
-.no-margin {
-    margin: 0;
-}
-
-.owl-carousel3 {
-    height: auto !important;
-}
-
-.owl-carousel{
-    height: auto !important;
-}
+/*# sourceMappingURL=style.css.map */
