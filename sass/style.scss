@@ -700,6 +700,8 @@ header {
 }
 
 .about-img {
+    border-radius: 3px;
+
     @media screen and(max-width: $screen-md) {
         margin-bottom: 1.5em;
     }
@@ -779,6 +781,7 @@ header {
 
     ul {
         margin-bottom: 0px;
+        padding-inline-start: 1em;
 
         li {
             list-style: none;
@@ -803,6 +806,7 @@ header {
 .work-card {
 
     border: 1px solid rgba(0, 0, 0, .03);
+    border-radius: 5px;
     padding: 3em;
     margin-top: 1em;
     margin-bottom: 4em;
