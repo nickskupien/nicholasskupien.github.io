@@ -241,6 +241,13 @@ colour {
     align-items: center;
 }
 
+.flex-center {
+    @include flex();
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 #page {
     overflow: hidden;
     position: relative;
@@ -586,12 +593,12 @@ header {
 // #instagram,
 #services,
 #contact,
-#work,
 #blog,
 #testimony,
 #progress,
 #contact,
-#about {
+#about,
+#portfolio {
     padding: 5em 0;
     clear: both;
     position: relative;
@@ -600,6 +607,18 @@ header {
         padding: 2em 0;
     }
 
+}
+
+#work {
+    padding: 9em 0;
+    padding-bottom: 5em;
+    clear: both;
+    position: relative;
+
+    @media screen and(max-width: $screen-sm) {
+        padding: 7em 0em;
+        padding-bottom: 2em;
+    }
 }
 
 #about {
@@ -714,6 +733,37 @@ header {
     }
 }
 
+.text-center {
+    text-align: center;
+}
+
+.img-parallax {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .app-icon {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        bottom: -75px;
+        background-size: contain;
+        filter: drop-shadow(0px 5px 10px rgba(0, 0, 50, 0.2)) drop-shadow(0px -10px 10px rgba(0, 0, 0, 0.4));
+
+        @media screen and(max-width: $screen-sm) {
+            height: 120px;
+            width: 120px;
+            bottom: -60px;
+        }
+    }
+}
+
 // USEFUL CODE // --------------------------------//
 .bold {
     position: absolute;
@@ -771,7 +821,7 @@ header {
         margin-bottom: -2em;
 
         @media screen and(max-width: $screen-md) {
-            margin-bottom: 0px;
+            margin-bottom: -1em;
         }
     }
 }
@@ -813,8 +863,8 @@ header {
     display: none;
     position: absolute;
     bottom: 15px;
-    width: 120%;
-    left: -15px;
+    width: 200%;
+    left: -50%;
     height: 0px;
     border: 1px solid lighten($brand-black, 75%);
 
@@ -1395,6 +1445,15 @@ header {
     &:focus,
     &:active {
         box-shadow: none;
+    }
+}
+
+.icn-back-container {
+    margin-right: auto;
+    padding: 1em;
+
+    img {
+        width: 15px;
     }
 }
 
