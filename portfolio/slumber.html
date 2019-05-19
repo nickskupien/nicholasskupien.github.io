@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nicholas Skupien | Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Nicholas Skupien" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Nicholas Skupien" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#47b0ce">
+    <meta name="msapplication-TileColor" content="#47b0ce">
+    <meta name="theme-color" content="#1c1c1c">
+
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]> 
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <div id="page" style="padding-top: 0px;">
+        <div class="img-parallax" style="background-image: url('../images/dream-journal/overview@3x.jpg');" data-stellar-background-ratio="0.5">
+            <div class="app-icon" style="background-image: url('../images/dream-journal/icon-app.png');">
+
+            </div>
+        </div>
+        <div id="work" style="">
+            <div class="container">
+                <div class="flex-center">
+                    <a href="../index.html" class="flex-center icn-back-container">
+                        <img src="../assets/icn_back.svg">
+                    </a>
+                    <div class="heading-section text-center" style="position: absolute; left: 50%; transform: translate(-50%, 0);">
+                        <span>Slumber</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container work-body">
+                <h1>The Problem</h1>
+                <p>Studies have shown that if you write down your dreams right after you wake up then you are more likely to be able to remember them.</p>
+                <p>Can something be done to aid people to record their dreams in a quick efficient manner before they forget?</p>
+                <p>(inspired from Weekly UX, a service that sends design challenges to your inbox every week)</p>
+                <h1>Research</h1>
+                <h2>Talking to people</h2>
+                <p>I wanted to learn what other people had to say about their own dreams. After all, everyone is different and that could apply to how they remember their dreams.</p>
+                <p>I asked around 10 of my friends and family some questions about their dream habits. I also asked what they wanted to learn from their dreams. The main things I discovered were:</p>
+                <ol>
+                    <li>Some identified their key issue as waking up to remember multiple dreams in one night</li>
+                    <li>They did not care to be able to share their dreams with friends through the app (an initial idea that I was unsure about)</li>
+                    <li>They wanted a quick way to input the general mood of the dream</li>
+                </ol>
+                <h2>Looking online</h2>
+                <p>I wanted to ask questions and learn about people who already record their dreams. I looked online and found many reddit threads about lucid dreaming. I learned that people who lucid dream would want a way to classify a dream as lucid and also get periodic reminders to do a reality check (a way of checking to see if you are dreaming or not). These periodic reminders could allow a user to build up a habit of checking to see if they are in a dream or not.</p>
+                <h2>Existing Solutions</h2>
+                <p>I developed an understanding of the current solutions by using a pen &amp; paper and an existing dream journal app to record my dreams for a couple nights. I came up with a list of my own benefits and drawbacks of each method.</p>
+                Pen &amp; Paper:
+                <ul><b>Benefits</b>
+                    <li>Fast to retrieve</li>
+                    <li>Notes can be written however the user likes</li>
+                    <b>Drawbacks</b>
+                    <li>Requires lighting in the middle of the night</li>
+                    <li>Cannot apply statistical analysis on your dreams</li>
+                    <li>Difficult to retrieve a specific dream without scanning through them all</li>
+                </ul>
+                Existing App:
+                <ul><b>Benefits</b>
+                    <li>Good use of sections (title, body, tags) used to quickly record a dream before it is forgotten</li>
+                    <b>Drawbacks</b>
+                    <li>Use of bright colours make it easy for the mind to get distracted</li>
+                    <li>Complicated user interfaces makes it take too long to navigate the UI</li>
+                </ul>
+                <h1>Building the Product</h1>
+                <h2>User Stories</h2>
+                <p>After taking all my research consideration I created a list of user stories. The importance was created based on if the story were a necessary feature for the app to function. These stories helped me tailor the wireframes and prototypes to the users needs</p>
+                <table>
+                    <tr>
+                        <th>Situation</th>
+                        <th>Task</th>
+                        <th>Importance</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">When I Record Dreams</td>
+                        <td>I want to be able to record dreams quickly/easily
+                        </td>
+                        <td>HIGH</td>
+                    </tr>
+                    <tr>
+                        <td>I want to be able to record multiple dreams at once
+                        </td>
+                        <td>HIGH</td>
+                    </tr>
+                    <tr>
+                        <td>I want to be able to enter my mood
+                        </td>
+                        <td>HIGH</td>
+                    </tr>
+                    <tr>
+                        <td>I want to be able to input using my voice
+                        </td>
+                        <td>MEDIUM</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">When I Look at my Dreams</td>
+                        <td>I want to see a list of all my dreams
+                        </td>
+                        <td>HIGH</td>
+                    </tr>
+                    <tr>
+                        <td>I want to be able to quickly find an old dream
+                        </td>
+                        <td>HIGH</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">When I Look at my Dream Statistics</td>
+                        <td>I want to see the number of dreams I have a night
+                        </td>
+                        <td>MEDIUM</td>
+                    </tr>
+                    <tr>
+                        <td>I want to see the most common themes
+                        </td>
+                        <td>MEDIUM</td>
+                    </tr>
+                    <tr>
+                        <td>When I Wake up</td>
+                        <td>I want to be reminded to record my dreams
+                        </td>
+                        <td>HIGH</td>
+                    </tr>
+                    <tr>
+                        <td>When I am going about my day</td>
+                        <td>I want to be periodically reminded to do a reality check to see if I am dreaming
+                        </td>
+                        <td>HIGH</td>
+                    </tr>
+                </table>
+                <p></p>
+                <h2>Sitemap</h2>
+                <p>I used the user stories to build a sitemap for the app. This is also where I established a flow through the app.</p>
+                <img class="" src="../images/dream-journal/sitemap.png" style="height:auto; width: 100%">
+                <p></p>
+                <h2>Wireframes</h2>
+                <p>I used the sitemap to create wireframes for what each view should look like. I created as many iterations on each view as I could. I went back reiterating the versions of each view that I found were most usable and made sure that each wireframe would fulfill the user stories.</p>
+                <p>Using these wireframes, a more high-fidelity mockup was created in sketch.</p>
+                <img src="../images/dream-journal/sketch.png" style="height:auto; width: 100%">
+                <p></p>
+                <h1>Design Choices</h1>
+                <h2>Colour</h2>
+                <p>I first created the designs in sketch in black and white so that I focused more on other important aspects of the design such as readability and usability.</p>
+                <p>I learned from the article, <a href="https://medium.com/devsdesign/4-reasons-why-you-should-design-without-color-first-c0e38180f689">Why you should design without colour first</a>, that designing in black and white allows for the right questions to arise when showing people your design. Not only are people paying less attention to what colours were chosen, it allows the designer to get more constructive feedback. For instance, “what colour works for this button” is a much better conversation starter than “why have you chosen yellow for this button”. This helped greatly to receive feedback on more important aspects of my design when getting friends to look over my design</p>
+                <p>After finishing the colourless designs, I decided to go with a very muted colour palette in a dark theme for a couple reasons</p>
+                <ol>
+                    <li>It keeps users focused on recording their dreams before they forget or get distracted by colour</li>
+                    <li>The dark theme is easier on the eyes when the user has just woken up</li>
+                </ol>
+                <p>The Statistics page has colour for differentiating between the different groups of data displayed on each chart. For colour blind users, a setting to change the colour differentiation to patterns should be implemented. </p>
+                <h2>Interaction</h2>
+                <p>Interacting with the app should feel simple and fluid. After all, the last thing a user wants to do when waking up is to deal with a frustrating and complex interface. I accomplished this by minimising the number of screens and making all but one accessible from the tab bar. I found in my own day to day use of apps, that when menus are nested in a hamburger or drop down menu it becomes very hard to do what you want to accomplish in the app.</p>
+                <p>I also wanted to make sure that adding a dream was easy. I initially thought that each page would have a floating/persistent add dream button in the bottom left or right corner but this left the design unclean and allowed for potential misclicks of the button and annoyances if it was ever overtop of something. I ended up going with a swipe down event on the dreams view for adding a dream and swipe up event for saving the dream. In the adding/editing dream view, users can also click a back button to perform the same action as the swipe up event.</p>
+                <p>The tab bar on the top of the new/edit dream view allows a user to add multiple dreams and switch between them while they are being edited. This fulfills a use case where a user wakes up with multiple dreams, simultaneously remembering them all.</p>
+                <p>Editing a dream can be accomplished by holding down a dream which brings up the familiar new dream page and also allows a user to start adding a dream from the tab bar.</p>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video controls class="video">
+                            <source src="../images/dream-journal/animate-new-dream.webm" type="video/webm">
+                        </video>
+                        <p class="video-caption">Adding a new Dream</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls class="video">
+                            <source src="../images/dream-journal/animate-edit-dream.webm" type="video/webm">
+                        </video>
+                        <p class="video-caption">Editing an Exisiting Dream</p>
+                    </div>
+                </div>
+                <h1>Improvements</h1>
+                <p>I wish I had seeked out people that have previously used dream tracking applications and seen what their top sources of annoyances were.</p>
+                <p>Usability testing is an absolute must when creating a user centered design, and I feel as though I should have done more with this project. It would have helped me define potential red flags with confusing aspects of the design. I should have taken my high-fidelity mockup and interviewed users with it to validate the design.</p>
+                <h1>Conclusion</h1>
+                <p>Overall I learned a lot on this project about creating a user centered design. Specifically, researching the problem with potential users, creating user stories to model customer behaviour, and designing interfaces to be simple/easy to use.</p>
+            </div>
+        </div>
+        <footer class="" id="footer">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1 footer-wrapper">
+                    <div class="row footer-content">
+                        <a href="files/Nicholas%20Skupien%20Resume.pdf" class="heading-section footer-link">
+                            <span class="footer-heading">
+                                Resume
+                            </span>
+                        </a>
+                        <a href="mailto:nicholasskupien@gmail.com" class="heading-section footer-link">
+                            <span class="footer-heading">
+                                Email
+                                <p class="footer-hidden-text">
+                                    nicholasskupien@gmail.com
+                                </p>
+                            </span>
+
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicholasskupien" class="heading-section footer-link">
+                            <span class="footer-heading">
+                                Linkedin
+                            </span>
+                        </a>
+                    </div>
+                    <div class="row footer-content">
+                        <p class="footer-description footer-watermark">
+                            Designed and Developed by Nicholas Skupien
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/magnific-popup-options.js"></script>
+    <!-- Parallax Scrolling -->
+    <script src="../js/jquery.stellar.min.js"></script>
+    <!-- Main JS (Do not remove) -->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
