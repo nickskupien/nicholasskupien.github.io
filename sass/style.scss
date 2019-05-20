@@ -619,13 +619,13 @@ header {
 }
 
 #work {
-    padding: 9em 0;
+    padding: 9em 15px 9em 15px;
     padding-bottom: 5em;
     clear: both;
     position: relative;
 
     @media screen and(max-width: $screen-sm) {
-        padding: 7em 0em;
+        padding: 7em 15px 7em 15px;
         padding-bottom: 2em;
     }
 
@@ -652,9 +652,14 @@ header {
         padding-right: 20px
     }
 
-    .video-caption {
+    .img-caption {
         width: 100%;
         text-align: center;
+    }
+
+    .img-inline {
+        width: 100%;
+        height: auto;
     }
 
     .video {
@@ -784,7 +789,7 @@ header {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    //    background-attachment: fixed;
     position: relative;
     display: flex;
     align-items: center;
@@ -1496,7 +1501,7 @@ header {
 
 .icn-back-container {
     margin-right: auto;
-    padding: 1em;
+    padding: 1em 1em 1em 0em;
 
     img {
         width: 15px;
