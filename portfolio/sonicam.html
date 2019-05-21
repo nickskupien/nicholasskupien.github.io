@@ -61,7 +61,7 @@
 -->
         </div>
         <div id="work" style="padding-top: 3em;">
-            <div class="container">
+            <div class="container work-heading">
                 <div class="flex-center">
                     <a href="../index.html" class="flex-center icn-back-container">
                         <img src="../assets/icn_back.svg">
@@ -76,7 +76,7 @@
                 <p>Sonicam was created to meet the needs of modern content creators who are looking to capture high quality audio to accompany high quality video. This is a challenge that currently requires a dedicated crew with expensive equipment. Sonicam is a microphone attachment that mounts to the hot shoe mount of modern DSLR cameras.
                 </p>
                 <p>The device is equipped with a camera that allows audio sources within a scene to be identified. An 8 microphone array is used to capture audio from the desired audio source. An intuitive touch screen user interface make Sonicam easy to use. All the user needs to do is plug the 3.5mm stereo output into their camera to begin recording audio.</p>
-                <img src="../images/sonicam/product-rear.jpg" style="height:auto; width: 100%">
+                <img src="../images/sonicam/product-rear.jpg" style="height:auto; width: 100%;">
                 <p class="img-caption">The Rear of Sonicam</p>
                 <img src="../images/sonicam/product-screen.jpg" style="height:auto; width: 100%">
                 <p class="img-caption">The Front of Sonicam</p>
@@ -163,8 +163,10 @@
                 <p class="img-caption">iOS date picker</p>
                 <p>But due to time restraints, I went with 2 buttons for increasing and decreasing the volume, and the ability to hold them to change volume faster.</p>
                 <h2>Optimising Performance</h2>
-                <p>When testing the interface, I noticed that it would consume a lot of CPU resources. This works alright when the interface is the only process running, but in real use there will be audio and video processing happening concurrently. </p>
+                <p>When testing the interface, I noticed that it would consume a lot of CPU resources. This works alright when the interface is the only process running, but in real use there will be audio and video processing happening concurrently. To ensure that the interface does not consume more resources than it should, I modified the interface components so that they would only re-render when absolutely necessary</p>
                 <p>In react, every change to a component’s props or state will cause it to update/re-render. Some of these updates can be unnecessary and waste CPU resources. To mitigate some of these re-renders, I profiled the react app using the react developer tools Chrome extension. This allowed me to see what components were updating at a given time, and how much time it took them to update. I used this to define the components that update unnecessarily. To make them update only when needed, I made some of them inherit React.PureComponent (which performs a shallow props/state comparison, and updates when something changed) and for the others I wrote shouldComponentUpdate which I used to compare the props + state and return true when the component should update.</p>
+                <h2>Equalizer</h2>
+                <p>Initially, we wanted to have equalizer control for each POI. This is something that high end audio recording solutions can provide. However, due to the time restraints, we had to cut the equalizer functionality that was not necessary for the product to function, but nice to have. </p>
                 <h1>Improvements</h1>
                 <p>I think the UI could use some improvements to make it easier to read. POI names could have more contrast with the background. And the selected POI could be more obvious.</p>
                 <p>I wish I had interviewed potential customers for Sonicam (ex: vloggers, content creators, people that use the existing solutions), as that would have gave me more insight into the problems of current solutions and what features they would want to in this product.</p>
@@ -231,6 +233,4 @@
     <!-- Main JS (Do not remove) -->
     <script src="../js/main.js"></script>
 
-</body>
-
-</html>
+</body></html>
