@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nicholas Skupien | Main</title>
+    <title>Nicholas Skupien | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of Nicholas Skupien" />
+    <meta name="description" content="Portfolio of Nicholas Skupien, a computer engineering student and UI/UX developer" />
     <meta name="keywords" content="" />
     <meta name="author" content="Nicholas Skupien" />
 
@@ -174,7 +174,7 @@
                 <img class="img-inline" src="../images/dream-journal/sitemap.png">
                 <p></p>
                 <h2>Wireframes</h2>
-                <p>I used the sitemap to create wireframes for what each view should look like. I created as many iterations on each view as I could. I went back reiterating the versions of each view that I found were most usable and made sure that each wireframe would fulfill the user stories.</p>
+                <p>I used the sitemap to create wireframes for what each page should look like. I created as many iterations on each page as I could. I went back reiterating the versions that I found were most usable and made sure that each wireframe would fulfill the user stories.</p>
                 <p>Using these wireframes, a more high-fidelity mockup was created in sketch.</p>
                 <img src="../images/dream-journal/sketch.png" class="img-inline">
                 <p></p>
@@ -187,11 +187,11 @@
                     <li>It keeps users focused on recording their dreams before they forget or get distracted by colour</li>
                     <li>The dark theme is easier on the eyes when the user has just woken up</li>
                 </ol>
-                <p>The Statistics page has colour for differentiating between the different groups of data displayed on each chart. For colour blind users, a setting to change the colour differentiation to patterns should be implemented. </p>
+                <p>The Statistics page has colour for differentiating between the different groups of data displayed on each chart. For colour blind users, a setting to change the colour differentiation to patterns should be implemented. This colour will likely not be distracting to users recording their dreams as the statistics page does not need to be opened to add dreams</p>
                 <h2>Interaction</h2>
-                <p>Interacting with the app should feel simple and fluid. After all, the last thing a user wants to do when waking up is to deal with a frustrating and complex interface. I accomplished this by minimising the number of screens and making all but one accessible from the tab bar. I found in my own day to day use of apps, that when menus are nested in a hamburger or drop down menu it becomes very hard to do what you want to accomplish in the app.</p>
-                <p>I also wanted to make sure that adding a dream was easy. I initially thought that each page would have a floating/persistent add dream button in the bottom left or right corner but users said this left the design unclean/busy and that this allowed for potential misclicks of the button and annoyances if it was ever overtop of something. I agreed with their statements and ended up going with a swipe down event on the dreams view for adding a dream and swipe up event for saving the dream. People said this felt more natural. In the adding/editing dream view, clicking the back button performs the same action as the swipe up event. I included this back button, as that is what people have grown accustom to in other interfaces.</p>
-                <p>The tab bar on the top of the new/edit dream view allows a user to add multiple dreams and switch between them while they are being edited. This fulfills a use case where a user wakes up with multiple dreams, simultaneously remembering them all.</p>
+                <p>Interacting with the app should feel simple and fluid. After all, the last thing a user wants to do when waking up is to deal with a frustrating and complex interface. I accomplished this by minimising the number of screens and making all but one (new/edit dream page) accessible from the tab bar. I found in my own day to day use of apps, that when menus are nested in a hamburger or drop down menu it becomes very hard to do what you want to accomplish in the app.</p>
+                <p>I also wanted to make sure that adding a dream was easy. I initially thought that each page would have a floating/persistent add dream button in the bottom left or right corner but users said this left the design unclean/busy and that this allowed for potential misclicks of the button and annoyances if it was ever overtop of something. I agreed with their statements and ended up going with a swipe down event on the dreams page for adding a dream and swipe up event for saving the dream. People said this felt more natural. On the adding/editing dream page, clicking the back button performs the same action as the swipe up event. I included this back button, as that is what people have grown accustom to in other interfaces.</p>
+                <p>The tab bar on the top of the new/edit dream page allows a user to add multiple dreams and switch between them while they are being edited. This fulfills a use case where a user wakes up with multiple dreams, simultaneously remembering them all.</p>
                 <p>Editing a dream can be accomplished by holding down a dream which brings up the familiar new dream page and also allows a user to start adding a dream from the tab bar.</p>
                 <div class="video-container">
                     <div class="video-wrapper">
@@ -207,11 +207,49 @@
                         <p class="img-caption">Editing an Exisiting Dream</p>
                     </div>
                 </div>
+                <h1>Fulfillment of User Stories</h1>
+                <p>To make sure that my design accomplished everything it was supposed to get done, I went back to the initial user stories and verified that they were sufficiently covered.</p>
+                <b>"I want to be able to record dreams quickly"</b>
+                <p style="margin-left: 1em;">Accomplished by having one action open the new dream window. Dreams are split up into title, description, mood, tags, type.  Reduces the amount of time it takes a user to record their dreams versus writing them on paper.
+                </p>
+                <b>"I want to be able to record multiple dreams at once"</b>
+                <p style="margin-left: 1em;">Tab bar when adding dreams to add and edit multiple dreams at the same time.
+                </p>
+                <b>"I want to be able to enter my mood"</b>
+                <p style="margin-left: 1em;">
+                Mood section when adding dreams has 5 different options for really happy, happy, neutral, sad, frightened/really sad.  Could have a setting to modify or add different moods using emojis</p>
+                <b>"I want to be able to input using my voice"</b>
+                <p style="margin-left: 1em;">
+                Already covered by dictation features that are built into keyboards. However, This could be built into the app using Google’s speech to text API for users who use keyboards without dictation</p>
+                <b>"I want to see a list of all my dreams"</b>
+                <p style="margin-left: 1em;">
+                This can be seen in the main dreams page and when searching</p>
+                <b>"I want to see statistics on my dream"</b>
+                <p style="margin-left: 1em;">
+                Accomplished by the statistics screen, dropdown by the heading controls the range of data shown</p>
+                <b>"I want to be able to quickly find an old dream"</b>
+                <p style="margin-left: 1em;">
+                Can be found by searching (by text input, by type, by tag, by mood, by suggested searches)</p>
+                <b>"I want to see the number of dreams I have a night"</b>
+                <p style="margin-left: 1em;">
+                Total dreams are seen in the search bar after being clicked on but before entry (could always be in the search bar if users have trouble finding it). Daily dreams seen on the statistics page in the Mood section</p>
+                <b>"I want to see the most common themes"</b>
+                <p style="margin-left: 1em;">
+                Statistics page shows the most common tags a user has (can be expanded to show all tags in order of use) and an overview of the mood</p>
+                <b>"I want to see how I was feeling"</b>
+                <p style="margin-left: 1em;">
+                Statistics page shows an overview of the dream’s mood.  Mood is broken down into percentage of each 5 moods and a breakdown of the average mood on a given day of the week </p>
+                <b>"I want to be reminded to record my dreams"</b>
+                <p style="margin-left: 1em;">
+                Options to set up daily reminders for recording dreams</p>
+                <b>"I want to be periodically reminded to do a reality check to see if I am dreaming"</b>
+                <p style="margin-left: 1em;">
+                Options to get periodically reminded to check if in a dream</p>
                 <h1>Improvements</h1>
-                <p>I wish I had seeked out people that have previously used dream tracking applications and seen what their top sources of annoyances were.</p>
-                <p>Usability testing is an absolute must when creating a user centered design, and I feel as though I should have done more with this project. It would have helped me define potential red flags with confusing aspects of the design. I should have taken my high-fidelity mockup and interviewed users with it to validate the design.</p>
+                <p>I wish I had seeked out people that have previously used dream tracking applications and seen what their pain points were.</p>
+                <p>Usability testing is an absolute must when creating a user centered design, and I feel as though I could have gone the extra mile with this project. I should have taken my high-fidelity mockup and interviewed users with it to make sure the user stories were sufficiently covered.</p>
                 <h1>Conclusion</h1>
-                <p>Overall I learned a lot on this project about creating a user centered design. Specifically, researching the problem with potential users, creating user stories to model customer behaviour, and designing interfaces to be simple/easy to use.</p>
+                <p>Overall I learned a lot on this project about creating a user centered design. Specifically, researching the problem, interviewing potential users, creating user stories to model customer behaviour, and designing interfaces to be simple/easy to use.</p>
             </div>
         </div>
         <footer class="" id="footer">
