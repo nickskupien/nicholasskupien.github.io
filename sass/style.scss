@@ -915,7 +915,7 @@ header {
     height: 0px;
     border: 1px solid lighten($brand-black, 75%);
 
-    @media screen and(max-width: $screen-md) {
+    @media screen and(max-width: $screen-sm) {
         display: block;
     }
 }
@@ -1059,7 +1059,7 @@ header {
         }
     }
 
-    @media screen and(max-width: $screen-md) {
+    @media screen and(max-width: $screen-sm) {
         transition: unset !important;
         transform: unset !important;
         box-shadow: unset !important;
