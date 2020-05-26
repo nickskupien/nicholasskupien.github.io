@@ -1099,9 +1099,23 @@ header {
                 border-radius: 3px !important;
             }
         }
+        
+        .work-img-veeva {
+            border: 3px solid #f79222;
+        }
 
         .link {
             display: none;
+        }
+    }
+    
+    @media screen and(max-width: 600px) {
+        .work-img-container-veeva {
+            border: 3px solid #f79222;
+        }
+        
+        .work-img-veeva {
+            border: none !important;
         }
     }
 
